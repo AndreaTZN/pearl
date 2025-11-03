@@ -36,3 +36,16 @@
     }
   }
 }
+
+.role_container {
+  .role-collection_item {
+    .role-collection_arrow {
+      transition: transform 0.3s ease;
+    }
+    &:hover {
+      .role-collection_arrow {
+        transform: translateX(5px);
+      }
+    }
+  }
+}
