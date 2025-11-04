@@ -12,6 +12,18 @@
     opacity: 0;
   }
 }
+
+.logo {
+  .logo_picto {
+    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  &:hover {
+    .logo_picto {
+      transform: rotate(180deg);
+    }
+  }
+}
 .founders_section {
   .founders_logo {
     .founders_logo1,
