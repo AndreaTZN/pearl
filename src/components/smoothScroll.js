@@ -10,7 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
  * @see https://github.com/studio-freight/lenis
  */
 export const lenis = new Lenis({
-  duration: 0.8, // Scroll animation duration in seconds (higher = smoother but slower)
+  duration: 0.8,
+  smoothWheel: true,
 });
 
 // ================================================
