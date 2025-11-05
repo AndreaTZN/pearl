@@ -30,6 +30,7 @@ window.Webflow.push(() => {
         duration: 1.2,
         ease: 'power2.out',
         stagger: 0.05,
+        willChange: 'transform,opacity',
       }
     );
     tl.fromTo(
@@ -41,6 +42,7 @@ window.Webflow.push(() => {
         opacity: 1,
         duration: 1.5,
         ease: 'power2.out',
+        willChange: 'transform,opacity',
       },
       '<0.2'
     );
@@ -55,6 +57,7 @@ window.Webflow.push(() => {
         duration: 1.5,
         y: 0,
         ease: 'power2.out',
+        willChange: 'transform,opacity',
       },
       '<0.2'
     );
@@ -70,6 +73,7 @@ window.Webflow.push(() => {
         yPercent: 0,
         duration: 1.5,
         ease: 'power2.out',
+        willChange: 'transform,opacity',
       },
       '<'
     );
@@ -85,6 +89,7 @@ window.Webflow.push(() => {
         delay: 0.5,
         duration: 1.5,
         ease: 'power2.out',
+        willChange: 'transform,opacity',
       },
       '<0.2'
     );

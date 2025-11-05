@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const lenis = new Lenis({
   duration: 0.8,
   smoothWheel: true,
+  autoRaf: true,
 });
 
 // ================================================
