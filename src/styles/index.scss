@@ -76,48 +76,34 @@
 .wave {
   background: radial-gradient(
     188.05% 84.03% at 50% 93.52%,
-    #16161a 27.92%,
-    #3164ff 43.47%,
-    #ffc2d9 57.03%,
+    #16161a 22%,
+    #3164ff 34%,
+    #ffc2d9 57%,
     #ffd4ac 65%,
     #ffe8d4 75%,
     #faf9f7 100%
   );
-  &:nth-child(3) {
-    background: radial-gradient(
-      188.05% 84.03% at 50% 93.52%,
-      #16161a 27.92%,
-      #3164ff 35.7%,
-      #ffc2d9 57.03%,
-      #ffd4ac 65%,
-      #ffe8d4 75%,
-      #faf9f7 100%
-    );
-  }
-  &:nth-child(4) {
-    background: radial-gradient(
-      264.76% 87.14% at 50% 96.63%,
-      #16161a 27.92%,
-      #3164ff 35.7%,
-      #ffc2d9 53.47%,
-      #ffd4ac 65%,
-      #ffe8d4 75%,
-      #faf9f7 100%
-    );
-  }
-  &:nth-child(5) {
-    background: radial-gradient(
-      319.34% 84.03% at 50% 93.52%,
-      #16161a 27.92%,
-      #3164ff 33.35%,
-      #ffc2d9 57.03%,
-      #ffd4ac 65%,
-      #ffe8d4 75%,
-      #faf9f7 100%
-    );
+
+  @for $i from 2 through 16 {
+    &:nth-child(#{$i}) {
+      // Calcul progressif
+      $darkPos: 25% + ($i * 0.3%);
+      $bluePos: 40% + ($i * 0.6%);
+      $pinkPos: 57% + ($i * 0.3%);
+      $orangePos: 65% + ($i * 0.2%);
+
+      background: radial-gradient(
+        188.05% 84.03% at 50% 93.52%,
+        #16161a #{$darkPos},
+        #3164ff #{$bluePos},
+        #ffc2d9 #{$pinkPos},
+        #ffd4ac #{$orangePos},
+        #ffe8d4 75%,
+        #faf9f7 100%
+      );
+    }
   }
 }
-
 .footer {
   .footer_link {
     &::before {

@@ -91,17 +91,17 @@ window.Webflow.push(() => {
   });
 
   gsap.utils.toArray('.wave').forEach((wave, i) => {
-    console.log(wave);
     // Chaque vague bouge avec un décalage de temps différent
     const delay = i * 0.25;
     const amplitude = gsap.utils.random(0.8, 1.3);
 
     gsap.to(wave, {
-      yPercent: gsap.utils.random(0, 10),
+      yPercent: gsap.utils.random(0, 5),
       duration: gsap.utils.random(4, 6),
       repeat: -1,
       yoyo: true,
-      ease: 'power1.inOut',
+      ease: 'power3.inOut',
+
       delay,
     });
   });
